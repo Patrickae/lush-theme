@@ -2105,7 +2105,6 @@ $socialIconFontStack: 'icons';
 /*================ Module-specific styles ================*/
 /*================ Module | Footer ================*/
 .site-footer {
-  padding-bottom: $gutter;
 
   @include at-query ($max, $small) {
     .grid__item {
@@ -2122,6 +2121,17 @@ $socialIconFontStack: 'icons';
 
     &:hover {
       color: lighten($colorTextBody, 20%);
+    }
+  }
+  .footer-bottom-row {
+    padding: $gutter 8px;
+    margin-top: 1.4rem;
+    text-align: center;
+    margin-bottom: 0;
+    background-color: #153630;
+    color: #fff;
+    a {
+      color: #fff;
     }
   }
 }
