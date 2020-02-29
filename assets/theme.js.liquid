@@ -1,6 +1,36 @@
 window.theme = window.theme || {};
 window.slate = window.slate || {};
 
+// ==============Custom JS=====================
+
+function throttle(fn, wait) {
+  var time = Date.now();
+  return function() {
+    if ((time + wait - Date.now()) < 0) {
+      fn();
+      time = Date.now();
+    }
+  }
+}
+
+function isScrolledIntoView(elem){
+	return ($(window).height() + $(window).scrollTop() > $(elem).offset().top)
+}
+
+$(document).ready(function(){
+	var shopifySections = $('.shopify-section')
+	callback()
+	function callback() {
+		shopifySections.each(function(i,elem){
+			if (isScrolledIntoView(elem)) {
+				$(elem).addClass('section-initialized')
+			}
+		})
+	}
+	$(window).on('scroll', throttle(callback, 200))
+})
+// ============================================
+
 /* ================ VENDORS ================ */
 /* Simple jQuery Equal Heights @version 1.5.1. Copyright (c) 2013 Matt Banks. Dual licensed under the MIT and GPL licenses. */
 !function(a){a.fn.equalHeights=function(){var b=0,c=a(this);return c.each(function(){var c=a(this).innerHeight();c>b&&(b=c)}),c.css("height",b)},a("[data-equal]").each(function(){var b=a(this),c=b.data("equal");b.find(c).equalHeights()})}(jQuery);
