@@ -2380,7 +2380,17 @@ $socialIconFontStack: 'icons';
       display: inline-flex;
       justify-content: space-between;
     }
+    
+    &.lush-center-nav { 
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @media(max-width: 1040px){
+        display: table;
+      }
+    }
   }
+  
 
   .header-wrapper--transparent & {
     background-color: rgba(0,0,0, 0);

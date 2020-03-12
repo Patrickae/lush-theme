@@ -1,34 +1,34 @@
 {
   "current": {
     "color_body_bg": "#ffffff",
-    "color_headings": "#f77f07",
-    "color_body_text": "#111010",
-    "color_borders": "#0d0d0d",
+    "color_headings": "#034e45",
+    "color_body_text": "#0c0601",
+    "color_borders": "#034e45",
     "color_button_text": "#ffffff",
-    "color_primary": "#0a0909",
-    "color_secondary": "#f77f07",
+    "color_primary": "#034e45",
+    "color_secondary": "#030200",
     "color_product_background": "#ffffff",
-    "color_sale_tag": "#e80970",
+    "color_sale_tag": "#e84f09",
     "color_input": "#ffffff",
     "color_newsletter": "#f03c11",
     "color_drawer_background": "#034e45",
     "color_drawer_text": "#ffffff",
     "color_drawer_border": "#ffffff",
-    "color_drawer_button": "#0c0601",
-    "color_drawer_button_text": "#ffffff",
+    "color_drawer_button": "#f7f7f7",
+    "color_drawer_button_text": "#0c0601",
     "type_header_family": "bauer_bodoni_n4",
     "type_header_base_size": "34px",
-    "type_header_border_thickness": "1px",
-    "type_accent_family": "americana_n4",
+    "type_header_border_thickness": "3px",
+    "type_accent_family": "bauer_bodoni_n4",
     "type_accent_transform": true,
-    "type_accent_spacing": false,
-    "type_accent_subheadings": false,
-    "type_base_family": "americana_n4",
+    "type_accent_spacing": true,
+    "type_accent_subheadings": true,
+    "type_base_family": "bauer_bodoni_n4",
     "type_base_size": "17px",
     "type_base_italize_titles": false,
     "cart_type": "drawer",
     "cart_notes_enable": true,
-    "share_image": "",
+    "share_image": "shopify:\/\/shop_images\/2_a7c14c77-9646-4e84-9101-265b41d25573.png",
     "social_facebook_link": "https:\/\/www.facebook.com\/lushboutiquenc\/",
     "social_twitter_link": "",
     "social_pinterest_link": "",
@@ -74,8 +74,8 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/jonathan-borba-w-b7LoBvjvU-unsplash.jpg",
               "image_position": "center center",
-              "image_overlay": true,
-              "image_overlay_opacity": 21,
+              "image_overlay": false,
+              "image_overlay_opacity": 0,
               "text_alignment": "center",
               "slide_heading": "LIVE YOUR BEST LIFE",
               "slide_subheading": "",
@@ -108,8 +108,8 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/high-heels-on-steps.jpg",
               "image_position": "center center",
-              "image_overlay": true,
-              "image_overlay_opacity": 13,
+              "image_overlay": false,
+              "image_overlay_opacity": 0,
               "text_alignment": "center",
               "slide_heading": "LIVE YOUR BEST LIFE",
               "slide_subheading": "",
@@ -125,8 +125,8 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/young-woman-posing-at-carnival.jpg",
               "image_position": "center center",
-              "image_overlay": true,
-              "image_overlay_opacity": 25,
+              "image_overlay": false,
+              "image_overlay_opacity": 0,
               "text_alignment": "center",
               "slide_heading": "LIVE YOUR BEST LIFE",
               "slide_subheading": "",
@@ -142,8 +142,8 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/emma-dau-dpMfMXlGyRQ-unsplash.jpg",
               "image_position": "center center",
-              "image_overlay": true,
-              "image_overlay_opacity": 13,
+              "image_overlay": false,
+              "image_overlay_opacity": 0,
               "text_alignment": "center",
               "slide_heading": "LIVE YOUR BEST LIFE",
               "slide_subheading": "",
@@ -186,21 +186,21 @@
       "header": {
         "type": "header",
         "settings": {
-          "logo": "",
+          "logo": "shopify:\/\/shop_images\/1_16ecbbc2-ebf1-4f39-834c-639b8fc13e54.png",
           "logo_max_width": 260,
-          "header_color": "#f77f07",
-          "transparent_header_enable": true,
+          "header_color": "#034e45",
+          "transparent_header_enable": false,
           "transparent_logo": "",
-          "transparent_header_color": "#ffffff",
-          "search": "page",
+          "transparent_header_color": "#034e45",
+          "search": "modal",
           "main_menu_link_list": "main-menu",
           "drawer_bottom_link_list": "",
           "drawer_search_enable": false,
           "show_announcement": true,
           "home_page_only": true,
-          "text": "$5 FLAT RATE SHIPPING! ALL U.S. ORDERS OVER $100 SHIP FREE!!",
+          "text": "$5 FLAT RATE SHIPPING ON ALL U.S. ORDER \/\/ ALL ORDERS OVER $100 SHIP FREE!!",
           "link": "",
-          "color_bg": "rgba(0,0,0,0)",
+          "color_bg": "#034e45",
           "color_text": "#ffffff"
         }
       },
@@ -223,11 +223,12 @@
       },
       "1494894035034": {
         "type": "featured-row",
+        "disabled": true,
         "settings": {
-          "image": "shopify:\/\/shop_images\/blackcrocboots.jpg",
+          "image": "shopify:\/\/shop_images\/G-MILKWAY-07A-_COLOR_1.jpg",
           "layout": "left",
           "title": "MUST HAVE SHOES",
-          "text": "<p>These boots were made for walking. Limited amount. Get them while they still available. Won't last long.<\/p>",
+          "text": "<p>Step out in a pair of stylish new women's&nbsp;shoes! Whether you're looking for cute wedges for date night, styling flats for work or chic booties for the weekend, we have them here!<\/p>",
           "button_label": "See All",
           "button_link": "shopify:\/\/collections\/shoes"
         }
@@ -235,14 +236,14 @@
       "product-template": {
         "type": "product-template",
         "settings": {
-          "zoom_enable": false,
+          "zoom_enable": true,
           "social_sharing_products": true,
           "product_vendor_enable": false,
           "image_layout": "stacked",
           "quantity_enabled": false,
           "product_selector": "radio",
           "enable_payment_button": true,
-          "add_to_cart_button_size": "small"
+          "add_to_cart_button_size": "large"
         }
       },
       "product-recommendations": {
@@ -254,11 +255,12 @@
       },
       "1581042780651": {
         "type": "featured-row",
+        "disabled": true,
         "settings": {
           "image": "shopify:\/\/shop_images\/stil-D4jRahaUaIc-unsplash_1.jpg",
           "layout": "right",
           "title": "MUST HAVE ACCESSORIES",
-          "text": "<p>HOT Accessories available. Make a statement. BE YOURSELF.<\/p>",
+          "text": "<p>Complement any outfit with the latest jewelry from LUSH Boutique. Make a statement with some&nbsp;cute earrings or stylish belts that&nbsp;are sure to stand out!<\/p>",
           "button_label": "See All",
           "button_link": "shopify:\/\/collections\/earrings"
         }
@@ -290,15 +292,62 @@
           "show_share_buttons": true,
           "social_message": "Spread the word"
         }
+      },
+      "1583272990024": {
+        "type": "featured-collections",
+        "blocks": {
+          "1583272990024-0": {
+            "type": "collection",
+            "settings": {
+              "collection": "shoes"
+            }
+          },
+          "1583272990024-1": {
+            "type": "collection",
+            "settings": {
+              "collection": "earrings"
+            }
+          },
+          "1583272990024-2": {
+            "type": "collection",
+            "settings": {
+              "collection": "graphic-tees"
+            }
+          }
+        },
+        "block_order": [
+          "1583272990024-0",
+          "1583272990024-1",
+          "1583272990024-2"
+        ],
+        "settings": {
+          "title": ""
+        }
+      },
+      "1583273534397": {
+        "type": "featured-content",
+        "settings": {
+          "home_page_full_width": true,
+          "section_title": "MUST HAVE",
+          "text": "<p>Step out in a pair of stylish new women's&nbsp;shoes! Whether you're looking for cute wedges for date night, styling flats for work or chic booties for the weekend, we have some here!<\/p>\n<p><\/p>\n<p>Complement any outfit with the latest jewelry from LUSH Boutique. Make a statement with some&nbsp;cute earrings or stylish belts that&nbsp;are sure to stand out!<\/p>",
+          "text_size": "large"
+        }
+      },
+      "1583274356504": {
+        "type": "instafeed",
+        "settings": {}
       }
     },
     "content_for_index": [
       "slideshow",
       "featured-products",
       "1581044725161",
+      "1583273534397",
+      "1583272990024",
       "1494894035034",
       "1581042780651",
-      "newsletter"
+      "newsletter",
+      "1583274356504"
     ]
   },
   "presets": {
