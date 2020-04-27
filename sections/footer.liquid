@@ -183,7 +183,6 @@
       {% endif %}
 
       <div class="grid__item {{ footer_column_width }} {% if num_footer_columns == 1 %}text-center{% else %}large--text-right{% endif %}">
-        <p>&copy; {{ 'now' | date: '%Y' }}, {{ shop.name | link_to: routes.root_url }}<br>{{ powered_by_link }}</p>
           {%- if section.settings.show_payment_icons -%}
             {%- unless shop.enabled_payment_types == empty -%}
               <span class="visually-hidden">{{ 'general.payment.method' | t }}</span>
@@ -198,11 +197,9 @@
           {%- endif -%}
       </div>
     </div>
-
   </div>
+    <p class='footer-bottom-row'>&copy; {{ 'now' | date: '%Y' }}, {{ shop.name | link_to: routes.root_url }}</p>
 </footer>
-
-
 
 {% schema %}
 {

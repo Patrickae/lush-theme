@@ -210,6 +210,17 @@
   }
 }
 
+@include keyframes(pageContentIn) {
+  0% {
+    @include transform('translateX(10vw)');
+    opacity: 0;
+  }
+
+  100% {
+    @include transform('translateX(0)');
+    opacity: 1;
+  }
+}
 /*============================================================================
   Dependency-free breakpoint mixin
     - http://blog.grayghostvisuals.com/sass/sass-media-query-mixin/
@@ -856,6 +867,8 @@ hr {
 .hr--small {
   @extend hr;
   margin: 20px auto;
+  width: 60%;
+  border-color: #FFE8D4;
 }
 
 .hr--medium {
@@ -1920,7 +1933,6 @@ $shareCountBg: $colorBody;
 .index-sections {
   .shopify-section:first-child {
     margin: 0;
-
     &:not(.shopify-section--full-width) {
       margin-top: 110px;
     }
@@ -1928,9 +1940,15 @@ $shareCountBg: $colorBody;
 
   .shopify-section {
     margin-top: $gutter * 3;
-
     @include at-query($max, $medium) {
       margin-top: $gutter * 1.5;
+    }
+    &:not(:first-child):not(:last-child) {
+      opacity: 0;
+      &.section-initialized {
+        @include animation(pageContentIn 1.5s ease);
+        animation-fill-mode: forwards;
+      }
     }
   }
 }

@@ -294,7 +294,7 @@ $max: max-width;
 }
 
 $viewportIncrement: 1px;
-$siteWidth: 1050px;
+$siteWidth: 1150px;
 $small: 590px;
 $medium: 768px;
 $large: 769px;
@@ -1305,16 +1305,16 @@ html input[disabled] {
   -webkit-appearance: none;
   -moz-appearance: none;
   border-radius: $radius;
-
+  box-shadow: 0px 0px 0px #000;
   /*================ Set primary button colors - can override later ================*/
   background-color: $colorBtnPrimary;
   color: $colorBtnPrimaryText;
-  @include transition(background-color 0.4s ease-out);
+  @include transition(all 0.4s ease-out);
 
   &:hover {
-    @include transition(background-color 0.15s ease-out);
     background-color: $colorBtnPrimaryHover;
     color: $colorBtnPrimaryText;
+    box-shadow: 0px 10px 14px -9px #000;
   }
 
   &:active {
@@ -1578,6 +1578,7 @@ label[for] {
   textarea {
     display: block;
     margin-bottom: 10px;
+    background-color: #eee;
   }
 
   input[type="checkbox"],
@@ -1588,6 +1589,11 @@ label[for] {
 
   .btn {
     display: inline-block;
+  }
+  input[type="submit"] {
+    background-color: #153630;
+    transition: 0.3s ease;
+    font-weight: bold;
   }
 }
 
@@ -2105,7 +2111,6 @@ $socialIconFontStack: 'icons';
 /*================ Module-specific styles ================*/
 /*================ Module | Footer ================*/
 .site-footer {
-  padding-bottom: $gutter;
 
   @include at-query ($max, $small) {
     .grid__item {
@@ -2123,6 +2128,12 @@ $socialIconFontStack: 'icons';
     &:hover {
       color: lighten($colorTextBody, 20%);
     }
+  }
+  .footer-bottom-row {
+    padding: 8px;
+    margin-top: 1.4rem;
+    text-align: center;
+    margin-bottom: 0;
   }
 }
 
@@ -2354,6 +2365,7 @@ $socialIconFontStack: 'icons';
 .site-header {
   background-color: $colorBody;
   padding: 15px 0;
+  transition: 0.5s ease;
 
   .grid--table {
     display: table;
@@ -2365,10 +2377,39 @@ $socialIconFontStack: 'icons';
       display: table-cell;
       vertical-align: middle;
     }
+    > [role="navigation"] {
+      display: inline-flex;
+      justify-content: space-between;
+    }
+    
+    &.lush-center-nav { 
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @media(max-width: 1049px){
+        display: table;
+      }
+    }
   }
+  
 
   .header-wrapper--transparent & {
-    background-color: transparent;
+    background-color: rgba(0,0,0, 0);
+    transition: 0.5s ease;
+  }
+  &.fixed {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 0;
+    &.hidden {
+      @media(min-width: 1049px) {
+        top: -120px;
+      }
+      top: -80px;
+    }
+    // background-color: rgba(15,39,34, 0.6);
   }
 }
 
@@ -2396,6 +2437,7 @@ $socialIconFontStack: 'icons';
 
 .site-header__logo-link {
   display: block;
+  padding: 0;
 }
 
 .site-header__logo-link,
