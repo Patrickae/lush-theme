@@ -2380,6 +2380,10 @@ $socialIconFontStack: 'icons';
     > [role="navigation"] {
       display: inline-flex;
       justify-content: space-between;
+      width: 100%;
+      #AccessibleNav {
+        margin: auto;
+      }
     }
     
     &.lush-center-nav { 
@@ -2716,7 +2720,7 @@ $socialIconFontStack: 'icons';
 .mobile-nav__item--secondary {
   a {
     font-size: 16px;
-    color: adaptive-color($colorDrawerText, 25%);
+    color: adaptive-color($colorDrawerText, 75%);
     line-height: 1.2;
     padding-top: 10px;
     padding-bottom: 10px;
